@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name" placeholder="">Given Name: <input id="first-name" name="first-name" type="text" placeholder="Enter your Given Name" required /></label>
+        <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" placeholder="Enter your Last Name" required /></label>
+        <label for="email">Email: <input id="email" name="email" type="email" placeholder="Enter your email address" required /></label>
+        <label for="new-password">Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Create a unique password" required /></label>
+        <label for="confirm-password">Password: <input id="confirm-password" name="confirm-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Confirm password" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male-account"><input id="gender" type="radio" name="account-type" class="inline" checked /> Male</label>
+        <label for="female-account"><input id="gender" type="radio" name="account-type" class="inline" /> Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are your skills?</legend>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" checked />Computer Architecture</label>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" />Computer Networking</label>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" />Computer Programming</label>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" />Database Management</label>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" />System Administration</label>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" />User Interface / Experience</label>
+        <label for="skills"><input id="gender" type="checkbox" name="skills" class="inline" />Web Development</label>
+      </fieldset>
+      <fieldset>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">Year Level
+          <select id="referrer" name="referrer">
+            <option value="">Select Year Level</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+          </select>
+        </label>
+        <label for="bio">Other skill not mentioned above:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your other skills here..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        
+      </label>
+      <input type="submit" value="Sign Up" />
+
+      <div class="centered-link"">
+        <a href="..\UserLogin\index.html">Back to Login</a>
+      </div>
+      
+    </form>
+  </body>
+</html>
